@@ -1,0 +1,29 @@
+aid: pendo
+url: https://raw.githubusercontent.com/api-evangelist/pendo/refs/heads/main/apis.yml
+name: Pendo
+x-type: company
+description: >-
+  Pendo is a product analytics, in-app guidance, and feedback platform. Captures product usage, surfaces NPS, and delivers in-app messages, walkthroughs, and resource centers.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Product
+  - Analytics
+  - In-App Guidance
+  - Customer Success
+  - NPS
+created: '2026-05-08'
+modified: '2026-05-08'
+specificationVersion: '0.19'
+apis: []
+common:
+  - type: Website
+    url: https://www.pendo.io/
+  - type: Plans
+    url: plans/pendo-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/pendo-rate-limits.yml
+  - type: FinOps
+    url: finops/pendo-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
