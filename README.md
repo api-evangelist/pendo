@@ -16,9 +16,19 @@ Pendo is a product analytics, in-app guidance, and feedback platform. Captures p
 - **Created:** 2026-05-08
 - **Modified:** 2026-05-08
 
+## APIs
+
+### Pendo Engage API
+The Pendo Engage API provides programmatic access to product analytics data and in-app guide management — visitors, accounts, features, pages, guides, reports, metadata, and aggregations. Used to push and pull product usage data and to manage Pendo configuration outside the UI.
+
+- **Human URL:** https://engageapi.pendo.io/
+- **Base URL:** https://app.pendo.io/api/v1
+
 ## Common Properties
 - [Website](https://www.pendo.io/)
-- [Plans](plans/pendo-plans-pricing.yml) — placeholder, pipeline reconciles later
+- [Developers](https://www.pendo.io/developers/)
+- [Documentation](https://engageapi.pendo.io/)
+- [Plans](plans/pendo-plans-pricing.yml) — placeholder, pricing is sales-only
 - [RateLimits](rate-limits/pendo-rate-limits.yml) — placeholder
 - [FinOps](finops/pendo-finops.yml) — FOCUS-aligned placeholder
 

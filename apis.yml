@@ -14,10 +14,35 @@ tags:
 created: '2026-05-08'
 modified: '2026-05-08'
 specificationVersion: '0.19'
-apis: []
+apis:
+  - aid: pendo:engage-api
+    name: Pendo Engage API
+    description: >-
+      The Pendo Engage API provides programmatic access to product analytics data
+      and in-app guide management — visitors, accounts, features, pages, guides,
+      reports, metadata, and aggregations. Used to push and pull product usage
+      data and to manage Pendo configuration outside the UI.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://engageapi.pendo.io/
+    baseURL: https://app.pendo.io/api/v1
+    tags:
+      - Product Analytics
+      - In-App Guidance
+      - REST
+    properties:
+      - type: Documentation
+        url: https://engageapi.pendo.io/
+      - type: Developers
+        url: https://www.pendo.io/developers/
+      - type: Authentication
+        url: https://engageapi.pendo.io/#section/Authentication
 common:
   - type: Website
     url: https://www.pendo.io/
+  - type: Developers
+    url: https://www.pendo.io/developers/
+  - type: Documentation
+    url: https://engageapi.pendo.io/
   - type: Plans
     url: plans/pendo-plans-pricing.yml
   - type: RateLimits
