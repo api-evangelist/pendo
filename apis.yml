@@ -49,6 +49,60 @@ common:
     url: rate-limits/pendo-rate-limits.yml
   - type: FinOps
     url: finops/pendo-finops.yml
+  - type: Integrations
+    url: https://www.pendo.io/integrations/
+integrations:
+  - name: HubSpot CRM
+  - name: Intercom Live Chat
+  - name: Jira Product Tools
+  - name: Marketo Marketing Automation
+  - name: Okta Collaboration
+  - name: Salesforce CRM
+  - name: Segment Data
+  - name: Zendesk CS/Support
+  - name: Algolia Knowledge Base
+  - name: Amazon S3 Data
+  - name: BigQuery Data
+  - name: Breadcrumbs Data
+  - name: Calendly Collaboration
+  - name: Candu Product Tools
+  - name: Catalyst CS/Support
+  - name: ChurnZero CS/Support
+  - name: Confluence Product Tools
+  - name: Crowdin Product Tools
+  - name: DataGrail Data
+  - name: Dataworkz Connector
+  - name: Domo BI
+  - name: Drift Live Chat
+  - name: Figma Product Tools
+  - name: Fivetran Collaboration
+  - name: Fulcrum Data
+  - name: G2 Product Tools
+  - name: Gainsight CS/Support
+  - name: Google Cloud Storage Data
+  - name: Help Scout Knowledge Base
+  - name: HelpDocs Knowledge Base
+  - name: Integrately Connector
+  - name: Looker BI
+  - name: Microsoft Azure Data
+  - name: Optimizely Product Tools
+  - name: Pano CS/Support
+  - name: Planhat CS/Support
+  - name: Qualtrics User Feedback
+  - name: Redshift Data
+  - name: Slack Collaboration
+  - name: Snowflake Data
+  - name: Swiftype Knowledge Base
+  - name: Tableau BI
+  - name: Totango CS/Support
+  - name: Tray.io Connector
+  - name: TrustRadius User Feedback
+  - name: UserTesting User Feedback
+  - name: Voxpopme User Feedback
+  - name: Webhooks Connector
+  - name: WordPress Knowledge Base
+  - name: Workato Connector
+  - name: Zapier Connector
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
