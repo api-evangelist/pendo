@@ -1,7 +1,7 @@
 aid: pendo
 url: https://raw.githubusercontent.com/api-evangelist/pendo/refs/heads/main/apis.yml
 name: Pendo
-x-type: company
+kind: company
 description: >-
   Pendo is a product analytics, in-app guidance, and feedback platform. Captures product usage, surfaces NPS, and delivers in-app messages, walkthroughs, and resource centers.
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
