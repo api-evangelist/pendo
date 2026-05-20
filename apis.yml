@@ -37,6 +37,10 @@ apis:
       - type: Authentication
         url: https://engageapi.pendo.io/#section/Authentication
 common:
+  - type: GitHubOrganization
+    url: https://github.com/pendo-io
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/pendo-io
   - type: Website
     url: https://www.pendo.io/
   - type: Developers
