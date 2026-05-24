@@ -55,6 +55,8 @@ common:
     url: finops/pendo-finops.yml
   - type: Integrations
     url: https://www.pendo.io/integrations/
+  - type: LLMsTxt
+    url: https://app.pendo.io/llms.txt
 integrations:
   - name: HubSpot CRM
   - name: Intercom Live Chat
