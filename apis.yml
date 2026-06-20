@@ -4,7 +4,7 @@ name: Pendo
 kind: company
 description: >-
   Pendo is a product analytics, in-app guidance, and feedback platform. Captures product usage, surfaces NPS, and delivers in-app messages, walkthroughs, and resource centers.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Product
   - Analytics
@@ -22,7 +22,7 @@ apis:
       and in-app guide management — visitors, accounts, features, pages, guides,
       reports, metadata, and aggregations. Used to push and pull product usage
       data and to manage Pendo configuration outside the UI.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://engageapi.pendo.io/
     baseURL: https://app.pendo.io/api/v1
     tags:
