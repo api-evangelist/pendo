@@ -1,0 +1,16 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/pendo-openapi.yml
+summary:
+  types:
+  - apiKey
+  api_key_in:
+  - header
+schemes:
+- name: integrationKey
+  type: apiKey
+  in: header
+  parameter: X-Pendo-Integration-Key
+  description: Per-subscription Pendo integration key issued from the Pendo UI.
+  sources:
+  - openapi/pendo-openapi.yml
