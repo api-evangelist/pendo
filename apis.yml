@@ -37,6 +37,8 @@ apis:
       - type: Authentication
         url: https://engageapi.pendo.io/#section/Authentication
 common:
+  - type: AgenticAccess
+    url: agentic-access/pendo-agentic-access.yml
   - type: TrustCenter
     url: security/pendo-trust-center.yml
   - type: DomainSecurity
