@@ -1,0 +1,40 @@
+openapi: 3.1.0
+info:
+  title: Pendo Engage Accounts API
+  description: The Pendo Engage API provides programmatic access to product analytics data and in-app guide management. Endpoints cover visitors, accounts, features, pages, guides, reports, and metadata used to push and pull product usage data and to manage Pendo configuration outside the UI. Authentication uses a per-subscription integration key sent in the X-Pendo-Integration-Key header.
+  version: '1.0'
+  contact:
+    name: Pendo Engage API
+    url: https://engageapi.pendo.io/
+servers:
+- url: https://app.pendo.io/api/v1
+  description: Pendo US data center
+- url: https://app.eu.pendo.io/api/v1
+  description: Pendo EU data center
+security:
+- integrationKey: []
+tags:
+- name: Accounts
+paths:
+  /account/{accountId}:
+    parameters:
+    - name: accountId
+      in: path
+      required: true
+      schema:
+        type: string
+    get:
+      tags:
+      - Accounts
+      summary: Get an account
+      operationId: getAccount
+      responses:
+        '200':
+          description: Account details.
+components:
+  securitySchemes:
+    integrationKey:
+      type: apiKey
+      in: header
+      name: X-Pendo-Integration-Key
+      description: Per-subscription Pendo integration key issued from the Pendo UI.

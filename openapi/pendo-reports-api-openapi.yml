@@ -1,0 +1,67 @@
+openapi: 3.1.0
+info:
+  title: Pendo Engage Accounts Reports API
+  description: The Pendo Engage API provides programmatic access to product analytics data and in-app guide management. Endpoints cover visitors, accounts, features, pages, guides, reports, and metadata used to push and pull product usage data and to manage Pendo configuration outside the UI. Authentication uses a per-subscription integration key sent in the X-Pendo-Integration-Key header.
+  version: '1.0'
+  contact:
+    name: Pendo Engage API
+    url: https://engageapi.pendo.io/
+servers:
+- url: https://app.pendo.io/api/v1
+  description: Pendo US data center
+- url: https://app.eu.pendo.io/api/v1
+  description: Pendo EU data center
+security:
+- integrationKey: []
+tags:
+- name: Reports
+paths:
+  /report:
+    get:
+      tags:
+      - Reports
+      summary: List reports
+      operationId: listReports
+      responses:
+        '200':
+          description: A list of reports.
+  /report/{reportId}/results.csv:
+    parameters:
+    - name: reportId
+      in: path
+      required: true
+      schema:
+        type: string
+    get:
+      tags:
+      - Reports
+      summary: Get report results as CSV
+      operationId: getReportResultsCsv
+      responses:
+        '200':
+          description: CSV report results.
+          content:
+            text/csv: {}
+  /aggregation:
+    post:
+      tags:
+      - Reports
+      summary: Execute an aggregation query
+      operationId: runAggregation
+      description: Runs an ad-hoc aggregation pipeline against Pendo data (events, visitor history, etc.) and returns the result rows.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Aggregation result rows.
+components:
+  securitySchemes:
+    integrationKey:
+      type: apiKey
+      in: header
+      name: X-Pendo-Integration-Key
+      description: Per-subscription Pendo integration key issued from the Pendo UI.
