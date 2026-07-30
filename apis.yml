@@ -4,7 +4,20 @@ name: Pendo
 kind: company
 description: >-
   Pendo is a product analytics, in-app guidance, and feedback platform. Captures product usage, surfaces NPS, and delivers in-app messages, walkthroughs, and resource centers.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/pendo.png
 tags:
   - Product
   - Analytics
@@ -15,27 +28,96 @@ created: '2026-05-08'
 modified: '2026-05-08'
 specificationVersion: '0.19'
 apis:
-  - aid: pendo:engage-api
-    name: Pendo Engage API
-    description: >-
-      The Pendo Engage API provides programmatic access to product analytics data
-      and in-app guide management — visitors, accounts, features, pages, guides,
-      reports, metadata, and aggregations. Used to push and pull product usage
-      data and to manage Pendo configuration outside the UI.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://engageapi.pendo.io/
-    baseURL: https://app.pendo.io/api/v1
-    tags:
-      - Product Analytics
-      - In-App Guidance
-      - REST
-    properties:
-      - type: Documentation
-        url: https://engageapi.pendo.io/
-      - type: Developers
-        url: https://www.pendo.io/developers/
-      - type: Authentication
-        url: https://engageapi.pendo.io/#section/Authentication
+- aid: pendo:engage-api
+  name: Pendo Engage API
+  description: >-
+    The Pendo Engage API provides programmatic access to product analytics data and in-app guide management
+    — visitors, accounts, features, pages, guides, reports, metadata, and aggregations. Used to push and
+    pull product usage data and to manage Pendo configuration outside the UI.
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://engageapi.pendo.io/
+  baseURL: https://app.pendo.io/api/v1
+  tags:
+  - Product Analytics
+  - In-App Guidance
+  - REST
+  properties:
+  - type: Documentation
+    url: https://engageapi.pendo.io/
+  - type: Developers
+    url: https://www.pendo.io/developers/
+  - type: Authentication
+    url: https://engageapi.pendo.io/#section/Authentication
+- aid: pendo:pendo-accounts-api
+  name: Pendo Accounts API
+  description: The Accounts API from Pendo — 1 operation(s) for accounts.
+  humanURL: https://engageapi.pendo.io/
+  baseURL: https://app.pendo.io/api/v1
+  tags:
+  - Accounts
+  properties:
+  - type: OpenAPI
+    url: openapi/pendo-accounts-api-openapi.yml
+- aid: pendo:pendo-features-api
+  name: Pendo Features API
+  description: The Features API from Pendo — 2 operation(s) for features.
+  humanURL: https://engageapi.pendo.io/
+  baseURL: https://app.pendo.io/api/v1
+  tags:
+  - Features
+  properties:
+  - type: OpenAPI
+    url: openapi/pendo-features-api-openapi.yml
+- aid: pendo:pendo-guides-api
+  name: Pendo Guides API
+  description: The Guides API from Pendo — 2 operation(s) for guides.
+  humanURL: https://engageapi.pendo.io/
+  baseURL: https://app.pendo.io/api/v1
+  tags:
+  - Guides
+  properties:
+  - type: OpenAPI
+    url: openapi/pendo-guides-api-openapi.yml
+- aid: pendo:pendo-metadata-api
+  name: Pendo Metadata API
+  description: The Metadata API from Pendo — 2 operation(s) for metadata.
+  humanURL: https://engageapi.pendo.io/
+  baseURL: https://app.pendo.io/api/v1
+  tags:
+  - Metadata
+  properties:
+  - type: OpenAPI
+    url: openapi/pendo-metadata-api-openapi.yml
+- aid: pendo:pendo-pages-api
+  name: Pendo Pages API
+  description: The Pages API from Pendo — 2 operation(s) for pages.
+  humanURL: https://engageapi.pendo.io/
+  baseURL: https://app.pendo.io/api/v1
+  tags:
+  - Pages
+  properties:
+  - type: OpenAPI
+    url: openapi/pendo-pages-api-openapi.yml
+- aid: pendo:pendo-reports-api
+  name: Pendo Reports API
+  description: The Reports API from Pendo — 3 operation(s) for reports.
+  humanURL: https://engageapi.pendo.io/
+  baseURL: https://app.pendo.io/api/v1
+  tags:
+  - Reports
+  properties:
+  - type: OpenAPI
+    url: openapi/pendo-reports-api-openapi.yml
+- aid: pendo:pendo-visitors-api
+  name: Pendo Visitors API
+  description: The Visitors API from Pendo — 1 operation(s) for visitors.
+  humanURL: https://engageapi.pendo.io/
+  baseURL: https://app.pendo.io/api/v1
+  tags:
+  - Visitors
+  properties:
+  - type: OpenAPI
+    url: openapi/pendo-visitors-api-openapi.yml
 common:
   - type: AgenticAccess
     url: agentic-access/pendo-agentic-access.yml
