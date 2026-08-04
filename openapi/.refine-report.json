@@ -1,0 +1,26 @@
+{
+  "provider": "pendo",
+  "sources": [
+    "pendo-accounts-api-openapi.yml",
+    "pendo-features-api-openapi.yml",
+    "pendo-guides-api-openapi.yml",
+    "pendo-metadata-api-openapi.yml",
+    "pendo-pages-api-openapi.yml",
+    "pendo-reports-api-openapi.yml",
+    "pendo-visitors-api-openapi.yml"
+  ],
+  "outputs": [
+    "pendo-accounts-api-openapi.yml",
+    "pendo-features-api-openapi.yml",
+    "pendo-guides-api-openapi.yml",
+    "pendo-metadata-api-openapi.yml",
+    "pendo-pages-api-openapi.yml",
+    "pendo-reports-api-openapi.yml",
+    "pendo-visitors-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
