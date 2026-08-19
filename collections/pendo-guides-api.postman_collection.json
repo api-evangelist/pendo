@@ -1,0 +1,197 @@
+{
+  "item": [
+    {
+      "id": "e2c1b4e4-7a45-4c07-8e87-dda7e82bdce5",
+      "name": "Guides",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "40cb20f0-5e93-43d7-8a92-b96af2291796",
+          "name": "List guides",
+          "request": {
+            "name": "List guides",
+            "description": {},
+            "url": {
+              "path": [
+                "guide"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "a24afa4c-1a2d-4116-86f4-857b61b714be",
+              "name": "A list of guides.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "guide"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Pendo-Integration-Key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "125c937d-40fb-40a0-9480-72a503d9f001",
+          "name": "Get a guide",
+          "request": {
+            "name": "Get a guide",
+            "description": {},
+            "url": {
+              "path": [
+                "guide",
+                ":guideId"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "guideId",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "54c7a5ba-77f4-42f4-93bd-77a312ebf1f9",
+              "name": "Guide details.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "guide",
+                    ":guideId"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "guideId",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Pendo-Integration-Key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://app.pendo.io/api/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "X-Pendo-Integration-Key"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "c56881ad-2193-45b6-84af-e8b95b84cd7c",
+    "name": "Pendo Engage Accounts Guides API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The Pendo Engage API provides programmatic access to product analytics data and in-app guide management. Endpoints cover visitors, accounts, features, pages, guides, reports, and metadata used to push and pull product usage data and to manage Pendo configuration outside the UI. Authentication uses a per-subscription integration key sent in the X-Pendo-Integration-Key header.\n\nContact Support:\n Name: Pendo Engage API",
+      "type": "text/plain"
+    }
+  }
+}

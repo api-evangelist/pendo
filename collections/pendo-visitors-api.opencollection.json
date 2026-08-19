@@ -1,0 +1,44 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Pendo Engage Accounts Visitors API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-Pendo-Integration-Key",
+      "value": "{{X-Pendo-Integration-Key}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Visitors",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get a visitor",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://app.pendo.io/api/v1/visitor/:visitorId",
+            "params": [
+              {
+                "name": "visitorId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get a visitor"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

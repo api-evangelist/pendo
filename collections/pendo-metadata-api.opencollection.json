@@ -1,0 +1,48 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Pendo Engage Accounts Metadata API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-Pendo-Integration-Key",
+      "value": "{{X-Pendo-Integration-Key}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Metadata",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Set custom visitor metadata values",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://app.pendo.io/api/v1/metadata/visitor/custom/value"
+          },
+          "docs": "Set custom visitor metadata values"
+        },
+        {
+          "info": {
+            "name": "Set custom account metadata values",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://app.pendo.io/api/v1/metadata/account/custom/value"
+          },
+          "docs": "Set custom account metadata values"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

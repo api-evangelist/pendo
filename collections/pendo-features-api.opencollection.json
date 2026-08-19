@@ -1,0 +1,55 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Pendo Engage Accounts Features API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-Pendo-Integration-Key",
+      "value": "{{X-Pendo-Integration-Key}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Features",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List features",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://app.pendo.io/api/v1/feature"
+          },
+          "docs": "List features"
+        },
+        {
+          "info": {
+            "name": "Get a feature",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://app.pendo.io/api/v1/feature/:featureId",
+            "params": [
+              {
+                "name": "featureId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get a feature"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

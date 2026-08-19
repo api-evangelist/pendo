@@ -1,0 +1,191 @@
+{
+  "item": [
+    {
+      "id": "b491ec6b-eaf7-4e29-a8f5-b0c6e08656fe",
+      "name": "Metadata",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "b86a00ab-f6a5-48f0-93d4-1f475fcb1562",
+          "name": "Set custom visitor metadata values",
+          "request": {
+            "name": "Set custom visitor metadata values",
+            "description": {},
+            "url": {
+              "path": [
+                "metadata",
+                "visitor",
+                "custom",
+                "value"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "a6b8102c-d67e-438d-919e-dbbf10fe29fa",
+              "name": "Metadata updated.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "metadata",
+                    "visitor",
+                    "custom",
+                    "value"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Pendo-Integration-Key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "9c8b2770-2204-4e54-8524-2868e6cea314",
+          "name": "Set custom account metadata values",
+          "request": {
+            "name": "Set custom account metadata values",
+            "description": {},
+            "url": {
+              "path": [
+                "metadata",
+                "account",
+                "custom",
+                "value"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f6b6b332-9ad5-48cc-8aff-0f739eea1ff2",
+              "name": "Metadata updated.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "metadata",
+                    "account",
+                    "custom",
+                    "value"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Pendo-Integration-Key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://app.pendo.io/api/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "X-Pendo-Integration-Key"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "376bebc6-0d7a-44f8-90a9-c7e0e419d48d",
+    "name": "Pendo Engage Accounts Metadata API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The Pendo Engage API provides programmatic access to product analytics data and in-app guide management. Endpoints cover visitors, accounts, features, pages, guides, reports, and metadata used to push and pull product usage data and to manage Pendo configuration outside the UI. Authentication uses a per-subscription integration key sent in the X-Pendo-Integration-Key header.\n\nContact Support:\n Name: Pendo Engage API",
+      "type": "text/plain"
+    }
+  }
+}

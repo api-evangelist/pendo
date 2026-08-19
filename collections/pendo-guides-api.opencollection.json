@@ -1,0 +1,55 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Pendo Engage Accounts Guides API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-Pendo-Integration-Key",
+      "value": "{{X-Pendo-Integration-Key}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Guides",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List guides",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://app.pendo.io/api/v1/guide"
+          },
+          "docs": "List guides"
+        },
+        {
+          "info": {
+            "name": "Get a guide",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://app.pendo.io/api/v1/guide/:guideId",
+            "params": [
+              {
+                "name": "guideId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get a guide"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

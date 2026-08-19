@@ -1,0 +1,70 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Pendo Engage Accounts Reports API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-Pendo-Integration-Key",
+      "value": "{{X-Pendo-Integration-Key}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Reports",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List reports",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://app.pendo.io/api/v1/report"
+          },
+          "docs": "List reports"
+        },
+        {
+          "info": {
+            "name": "Get report results as CSV",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://app.pendo.io/api/v1/report/:reportId/results.csv",
+            "params": [
+              {
+                "name": "reportId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get report results as CSV"
+        },
+        {
+          "info": {
+            "name": "Execute an aggregation query",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://app.pendo.io/api/v1/aggregation",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Runs an ad-hoc aggregation pipeline against Pendo data (events, visitor history, etc.) and returns the result rows."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
