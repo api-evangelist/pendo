@@ -54,6 +54,8 @@ apis:
   humanURL: https://engageapi.pendo.io/
   baseURL: https://app.pendo.io/api/v1
   tags:
+  - Account
+  tags_raw:
   - Accounts
   properties:
   - type: OpenAPI
